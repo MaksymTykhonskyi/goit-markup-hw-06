@@ -736,3 +736,33 @@ background-color: rgba(0, 0, 0, 0.2);
   fill: var(--accent-color);
 }
 
+/* form */
+
+.contact-form{
+  width: 448px;
+  margin-top: 41px;
+  margin-right: 39px; 
+
+}
+
+.text-form{
+  font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+}
+
+.contact-form-input{
+  display: block;
+  width: 100%;
+}
+
+
+
+.list-form label{
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: var(--text-color);
+margin-bottom: 10px;
+}
