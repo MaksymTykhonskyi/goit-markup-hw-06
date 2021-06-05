@@ -843,16 +843,35 @@ color: var(--text-color);
   
 }
 
-.modal-form-checkbox-policy::before{
+.modal-form-checkbox-policy::before {
+  display: block;
   content: "";
-  display: block
   width: 16px;
   height: 15px;
-  outline: 1px solid #000000;
-  
+  border: 2px solid var(--title-color);
+cursor: pointer;  
 }
 
-.icon-chack{
-  width: 16px;
-  height: 15px;
+.modal-form-checkbox{
+  /* appearance: none; */
+}
+
+ .icon-chack{
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    margin-right: 7px;
+    border: 2px solid var(--title-color); 
+    fill: transparent;
+    
+  }
+
+.modal-form-checkbox:checked + .icon-chack{
+fill: var(--accent-color);
+border: none; 
+
+} 
+.modal-form-checkbox:focus:checked + .icon-chack{
+  outline: auto var(--accent-color);
+  border-color: var(--accent-color);
 }
