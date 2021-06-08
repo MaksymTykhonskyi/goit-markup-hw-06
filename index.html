@@ -456,8 +456,8 @@
             <div class="footer-input-wrapper">
                 <form action="#">
                     <p class="form-text">Подпишитесь на рассылку</p>
-                    <label for="name" class="form-ladel-footer">
-                        <input type="email" name="user-email" class="contact-form-input-footer" placeholder="E-mail">
+                    <label  class="form-ladel-footer">
+                        <input type="email" name="user-email" class="contact-form-input-footer" placeholder="E-mail" >
                     </label>
                     <button type="submit" class="footer-form-button">
                         Подписаться
@@ -489,40 +489,42 @@
                     <label for="name" class="form-ladel">
                         Имя
                     <span class="modal-form-input-wrapper">
-                        <input type="text" name="user-name" class="contact-form-input"  minlength="2" required>
+                        <input type="text" name="user-name" class="contact-form-input"  minlength="2" required id="name">
                     <svg class="svg-form">
                         <use href="./images/symbol.svg#icon-person"></use>
                     </svg>
                 </span>
                     </label>
-                    <label for="name" class="form-ladel">
+                    <label for="tel" class="form-ladel">
                         Телефон
                         <span class="modal-form-input-wrapper">
-                        <input type="tel" name="user-phone" class="contact-form-input"  required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-111-11-11">
+                        <input type="tel" name="user-phone" class="contact-form-input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-111-11-11" id="tel">
                         <svg class="svg-form">
                             <use href="./images/symbol.svg#icon-phone"></use>
                         </svg>
                     </span>
                     </label>
-                    <label for="name" class="form-ladel">
+                    <label for="email" class="form-ladel">
                         Почта
                         <span class="modal-form-input-wrapper">
-                            <input type="email" name="user-email" class="contact-form-input" required>
+                            <input type="email" name="user-email" class="contact-form-input" required id="email">
                         <svg class="svg-form">
                             <use href="./images/symbol.svg#icon-email"></use>
                         </svg>
                     </span>
                     </label>
-                    <label for="name" class="form-ladel">
+                    <label for="comment" class="form-ladel">
                         Комментарий
-                        <textarea name="" class="madal-form-message" placeholder="Введите текст"></textarea>
+                        <textarea name="comment" class="madal-form-message" placeholder="Введите текст" id="comment"></textarea>
                     </label>
-                    <label 
-                    class="modal-form-checkbox-policy">
-                    <input name="user-policy" type="checkbox" class="modal-form-checkbox" required> 
-                    <svg class="icon-chack">
-                        <use href="./images/symbol.svg#icon-check"></use>
-                    </svg>
+                    <label class="modal-form-checkbox-policy">
+                    <input name="user-policy" type="checkbox" class="modal-form-checkbox" required > 
+                    <!-- <span class="icon-chack">
+                        <img class="icon-chack-img" src="./images/icon.check.svg" alt="">
+                    </span> -->
+                    <!-- <svg class="icon-chack">
+                        <use href="./images/icon.check.svg"></use>
+                    </svg> -->
                    
                         Соглашаюсь с рассылкой и принимаю 
                         <a class="modal-form-policy-link" href="">Условия договора</a>
@@ -531,11 +533,6 @@
         </form>
     </div>
     </div>
-    
-    
-                
-    
-    
-    <script src="./js/modal.js"></script>
+                    <script src="./js/modal.js"></script>
 </body>
 </html>

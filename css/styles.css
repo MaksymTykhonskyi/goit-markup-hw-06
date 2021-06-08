@@ -367,7 +367,6 @@ margin-left: -30px;
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  
 }
 
 /* КОНЕЦ ФОРТФОЛИО КАРТОЧКИ */
@@ -931,6 +930,7 @@ cursor: pointer;
 }
 
  .icon-chack{
+    background-image: url(../images/icon.check.svg);
     width: 16px;
     height: 15px;
     border-radius: 2px;
@@ -942,6 +942,8 @@ cursor: pointer;
     border-radius 2500ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1),
     outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-repeat: no-repeat;
+    background-position:50% 50% ;
     
     
     
