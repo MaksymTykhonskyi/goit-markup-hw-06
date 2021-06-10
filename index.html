@@ -518,7 +518,13 @@
                         <textarea name="comment" class="madal-form-message" placeholder="Введите текст" id="comment"></textarea>
                     </label>
                     <label class="modal-form-checkbox-policy">
-                    <input name="user-policy" type="checkbox" class="modal-form-checkbox" required > 
+                        <input class="modal-form-checkbox visually-hidden-checkbox" type="checkbox" name="user-policy"  required />
+                        <span class="icon-chack"> </span>
+                        Соглашаюсь с рассылкой и принимаю
+                        <a class="modal-form-policy-link" href=""> Условия договора</a>
+                      </label>
+                    <!-- <label class="modal-form-checkbox-policy">
+                    <input name="user-policy" type="checkbox" class="modal-form-checkbox" required >  -->
                     <!-- <span class="icon-chack">
                         <img class="icon-chack-img" src="./images/icon.check.svg" alt="">
                     </span> -->
@@ -526,9 +532,9 @@
                         <use href="./images/icon.check.svg"></use>
                     </svg> -->
                    
-                        Соглашаюсь с рассылкой и принимаю 
+                        <!-- Соглашаюсь с рассылкой и принимаю 
                         <a class="modal-form-policy-link" href="">Условия договора</a>
-                    </label>
+                    </label> -->
                     <button type="submit" class="modal-form-btn">Отправить</button>
         </form>
     </div>
